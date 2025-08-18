@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import {useNavigate} from "react-router-dom";
 import "./HomePage.css";
+import profilePic from "../assets/profile.jpg";
 
 const ProfilePage = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -23,6 +24,8 @@ const ProfilePage = () => {
         <div className="content-wrapper">
           <div className="profile-card">
             
+            <img src={profilePic} alt="Profile" className="profile-pic"/>
+
             <div>
               <h2 className="profile-name">Samir Al Zaber</h2>
               <p className="profile-info">📧 samir.cse.20230104136@aust.edu</p>
@@ -51,8 +54,8 @@ const ProfilePage = () => {
 
           <div className="profile-footer">
             <p>📞 Contact: +880 1927266998</p>
-            <p>🌐 Website: www.samiralzaber.com</p>
-            <p>🔗 Follow me: Twitter | LinkedIn | GitHub</p>
+            <p>🌐 Website: <a href="#gmail">www.samiralzaber.com</a></p>
+            <p>🔗 Follow me: <a href="#twitter">Twitter</a> || <a href="#linkedin">LinkedIn</a> || <a href="#github">GitHub</a></p>
           </div>
         </div>
       </div>

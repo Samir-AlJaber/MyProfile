@@ -96,14 +96,14 @@
 
 .profile-info {
   margin: 4px 0;
-  font-size: 14px;
-  color: #475569;
+  font-size: 16px;
+  color: #000000;
 }
 
 .profile-bio {
   margin-top: 10px;
-  font-size: 14px;
-  color: #334155;
+  font-size: 16px;
+  color: #000000;
 }
 
 .stats-card {
@@ -120,13 +120,13 @@
   margin: 0;
   font-size: 24px;
   font-weight: 600;
-  color: #3b82f6;
+  color: #176af0;
 }
 
 .stat p {
   margin: 4px 0 0 0;
   font-size: 14px;
-  color: #475569;
+  color: #000000;
 }
 
 .profile-footer {
@@ -136,7 +136,7 @@
   border-radius: 12px;
   text-align: center;
   font-size: 14px;
-  color: #475569;
+  color: #000000;
 }
 
 .profile-footer p {
