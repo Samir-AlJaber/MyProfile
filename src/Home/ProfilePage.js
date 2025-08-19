@@ -1,31 +1,32 @@
-import React, {useState} from "react";
-import {useNavigate} from "react-router-dom";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./HomePage.css";
 import profilePic from "../assets/profile.jpg";
 
 const ProfilePage = () => {
   const [isOpen, setIsOpen] = useState(true);
   const navigate = useNavigate();
+
   const toggleSidebar = () => setIsOpen(!isOpen);
 
   return (
-    <div className="container">
+    <div className="page-container">
+      
       <div className={`sidebar ${isOpen ? "open" : "collapsed"}`}>
         <button className="toggle-btn" onClick={toggleSidebar}>
           {isOpen ? "⮜" : "⮞"}
         </button>
         <ul>
-          <li onClick={() => navigate("/")}>{isOpen ? "Profile" : "👤"}</li>
-          <li onClick={() => navigate("/")}>{isOpen ? "My Articles" : "📝"}</li>
+          <li onClick={() => navigate("/")}>{isOpen ? "My Profile" : "👤"}</li>
+          <li onClick={() => navigate("/articles/page/1")}>{isOpen ? "My Articles" : "📝"}</li>
         </ul>
       </div>
 
       <div className="main-content">
         <div className="content-wrapper">
-          <div className="profile-card">
-            
-            <img src={profilePic} alt="Profile" className="profile-pic"/>
 
+          <div className="profile-card">
+            <img src={profilePic} alt="Profile" className="profile-pic" />
             <div>
               <h2 className="profile-name">Samir Al Zaber</h2>
               <p className="profile-info">📧 samir.cse.20230104136@aust.edu</p>
