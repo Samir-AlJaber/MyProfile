@@ -48,7 +48,7 @@ const ArticlesPage = () => {
   };
 
   return (
-    <div className="container">
+    <div className="page-container">
 
       <div className={`sidebar ${isOpen ? "open" : "collapsed"}`}>
         <button className="toggle-btn" onClick={toggleSidebar}>
