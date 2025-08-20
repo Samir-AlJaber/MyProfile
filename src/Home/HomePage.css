@@ -11,17 +11,17 @@
   background: #1e293b;
   color: #fff;
   padding: 20px 10px;
-  transition: width 0.3s ease;
+  transition: width 0.4s ease;
   min-height: 100vh;
   box-shadow: 2px 0 8px rgba(0,0,0,0.15);
 }
 
 .sidebar.open {
-  width: 220px;
+  width: 230px;
 }
 
 .sidebar.collapsed {
-  width: 70px;
+  width: 90px;
 }
 
 .sidebar ul {
@@ -37,21 +37,27 @@
   padding: 8px 12px;
   border-radius: 6px;
   transition: background 0.2s ease;
+  transition: transform 0.3s ease-in-out
 }
 
 .sidebar li:hover {
-  background: rgba(255,255,255,0.1);
+  background: #6f9cfb;
+  transform: translateY(-3px);
 }
 
 .toggle-btn {
-  background: #334155;
+  background: white;
   border: none;
-  color: #fff;
+  color: black;
   cursor: pointer;
   padding: 6px 12px;
   margin-bottom: 20px;
   border-radius: 6px;
   font-size: 16px;
+}
+
+.toggle-btn :hover{
+  background: #6f9cfb;
 }
 
 .main-content {
@@ -91,14 +97,14 @@
 
 .profile-name {
   margin: 0;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 600;
 }
 
 .profile-info {
   margin: 4px 0;
-  font-size: 16px;
-  color: #475569;
+  font-size: 17px;
+  color: black;
 }
 
 .table-section {
@@ -123,11 +129,11 @@ th, td {
   text-align: left;
   padding: 14px 12px;
   border-bottom: 1px solid #e2e8f0;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 th {
-  color: #334155;
+  color: black;
   font-weight: 600;
   background: #f8fafc;
 }
@@ -143,8 +149,8 @@ th {
 
 .profile-bio {
   margin-top: 10px;
-  font-size: 14px;
-  color: #334155;
+  font-size: 15px;
+  color: black;
 }
 
 .stats-card {
@@ -164,10 +170,10 @@ th {
   color: #3b82f6;
 }
 
-.stat p {
+.stat h6 {
   margin: 4px 0 0 0;
   font-size: 14px;
-  color: #475569;
+  color: black;
 }
 
 .profile-footer {
@@ -177,7 +183,7 @@ th {
   border-radius: 12px;
   text-align: center;
   font-size: 15px;
-  color: #475569;
+  color: black;
 }
 .profile-footer p {
   margin: 6px 0;

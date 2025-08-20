@@ -55,8 +55,10 @@ const ArticlesPage = () => {
           {isOpen ? "⮜" : "⮞"}
         </button>
         <ul>
-          <li onClick={() => navigate("/")}>{isOpen ? "Profile" : "👤"}</li>
-          <li onClick={() => navigate("/articles/page/1")}>{isOpen ? "My Articles" : "📝"}</li>
+          <li onClick={() => navigate("/")}>{isOpen ? "My Profile" : "👤"}</li>
+          <li onClick={() => navigate("/articles/page/1")}>{isOpen ? "My Articles (page 1)" : "📝"}</li>
+          <li onClick={() => navigate("/articles/page/2")}>{isOpen ? "My Articles (page 2)" : "📝"}</li>
+          <li onClick={() => navigate("/articles/page/3")}>{isOpen ? "My Articles (page 3)" : "📝"}</li>
         </ul>
       </div>
 

@@ -18,7 +18,9 @@ const ProfilePage = () => {
         </button>
         <ul>
           <li onClick={() => navigate("/")}>{isOpen ? "My Profile" : "👤"}</li>
-          <li onClick={() => navigate("/articles/page/1")}>{isOpen ? "My Articles" : "📝"}</li>
+          <li onClick={() => navigate("/articles/page/1")}>{isOpen ? "My Articles (page 1)" : "📝"}</li>
+          <li onClick={() => navigate("/articles/page/2")}>{isOpen ? "My Articles (page 2)" : "📝"}</li>
+          <li onClick={() => navigate("/articles/page/3")}>{isOpen ? "My Articles (page 3)" : "📝"}</li>
         </ul>
       </div>
 
@@ -41,15 +43,15 @@ const ProfilePage = () => {
           <div className="stats-card">
             <div className="stat">
               <h3>12</h3>
-              <p>Articles Published</p>
+              <h6>Articles Published</h6>
             </div>
             <div className="stat">
               <h3>8</h3>
-              <p>Drafts</p>
+              <h6>Drafts</h6>
             </div>
             <div className="stat">
               <h3>5</h3>
-              <p>Pending Reviews</p>
+              <h6>Pending Reviews</h6>
             </div>
           </div>
 
